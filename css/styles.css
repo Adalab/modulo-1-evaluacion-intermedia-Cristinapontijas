@@ -4,6 +4,11 @@
 }
 */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Rubik", sans-serif;
 }
@@ -11,12 +16,15 @@ body {
 /* header */
 
 .header {
-  /* height: 20vh; */
+  background-color: #ffffff;
+  width: 100vw;
   padding: 10px 0px 13px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .menu ul {
@@ -31,6 +39,7 @@ body {
 
 .menu ul li a {
   font-size: 16px;
+  text-transform: uppercase;
   text-decoration: none;
   color: #4a4a4a;
 }
@@ -53,11 +62,15 @@ body {
 /* main */
 
 .main {
-  height: 75vh;
+  height: 100vh;
   background-color: #3cdbc0;
   text-align: center;
   color: #ffffff;
   font-size: 30px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media all and (min-width: 768px) {
